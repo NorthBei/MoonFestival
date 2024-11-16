@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rocket</title>
+<style id="jsbin-css">
+html,body{
+  margin:0;
+  padding:0;
+  font-size:30px;
+}
+#rocket{
+  position: relative;
+  margin-left:7rem;
+  width: 5rem;
+  height: 16rem;
+}
+#rocket div{
+  position: absolute;
+}
+
+.body{
+  height: 15rem;
+  width: 15rem;
+  background: #dfe2e4;
+  background: linear-gradient(to bottom,#de5746 28%,#dfe2e4 28%);
+  border-radius: 50%;
+}
+
+.left,.right{
+  height: 12rem;
+  width: 2.5rem;
+  overflow: hidden;
+}
+
+.right{
+  left:2.5rem;
+}
+
+.right>.body{
+  right: 0;
+}
+
+.window{
+  top:6rem;
+  height: 2rem;
+  width: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius:50%;
+  background: #3a99d8;
+  border:0.3rem solid #444;
+}
+
+.wing{
+  top: 11rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 6rem;
+  width: 6rem;
+  background: transparent;
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 -2rem 0 0.5rem #de5746;
+}
+
+.launcher{
+  top:12rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left:0.2rem solid transparent;
+  border-right:0.2rem solid transparent;
+  border-bottom:0.5rem solid #444;
+  width:1.5rem;
+}
+
+.fire{
+  top:12.5rem;
+  left: 35%;
+  transform: translateX(-50%);
+  height: 1.5rem;
+  width: 1.5rem;
+  background: #f0c330;
+  z-index: -1;
+  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  transform: rotate(135deg);
+  box-shadow: 0.3rem -0.3rem 0 0.5rem #f19b2c;
+}
+</style>
+</head>
+<body>
+  <div id="rocket">
+    <div class="left">
+      <div class="body"></div>
+    </div>
+    <div class="right">
+      <div class="body"></div>
+    </div>
+    <div class="window"></div>
+    <div class="wing"></div>
+    <div class="launcher"></div>
+    <div class="fire"></div>
+  </div>
+</body>
+</html>

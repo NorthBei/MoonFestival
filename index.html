@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta property="og:type" content="website"/>
+		<meta property="og:image" content="https://northbei.github.io/MoonFestival/pic/og/preview_large.jpg">
+		<meta property="og:title" content="玉兔搗藥 - Jade Rabbit pounding medicine">
+		<meta property="og:description" content="中秋節就是要賞月阿 不然要幹嘛???">
+		<meta property="og:url" content="https://northbei.github.io/MoonFestival/index.html">	
+		<title>玉兔搗藥 - Jade Rabbit pounding medicine</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+		<style>
+			html,body{
+				margin: 0;
+				padding:0;
+			}
+			body{
+				background-color: #154e85;
+    			background-color: #2e4688;
+				height:100%;
+				height:100vh;
+				width:100vw;
+				overflow: hidden;
+			}
+			#circle{
+				border-radius:100%;
+				background-color: #ebca47;
+				height:33vmax;
+				width:33vmax;
+				position: absolute;
+				top:50%;
+				left:50%;
+				transform:translate(-50%,-50%);
+				box-shadow: 0px 0px 38px 10px #e6c53f,21px 14px 66px 4px #c7a61f inset;
+			}
+			#circle::after{
+				content: "";
+				position: absolute;
+				background: #c7a61f;
+				top: 8vmax;
+				right: 7vmax;
+				height: 5vmax;
+				width: 5vmax;
+				border-radius: 100%;
+				box-shadow: 0px 0px 38px 10px #e6c53f;
+			}
+			#circle::before{
+				content: "";
+				position: absolute;
+				background: #c7a61f;
+				top: 13vmax;
+				right: 4vmax;
+				height: 2vmax;
+				width: 2vmax;
+				border-radius: 100%;
+				box-shadow: 0px 0px 38px 10px #e6c53f;
+			}
+
+			#title{
+				text-align: center;
+				position: absolute;
+				bottom: 0;
+				width: 100vw;
+				font-size: 3vmax;
+				font-family: 'Montserrat Alternates';
+				margin: calc((50vh - 20vmax)/2) 0;
+				color:#ebc946;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="title" lang="en">Moon Festival</h1>
+
+		<div class="star" id="start1"></div>
+		<div class="star" id="start2"></div>
+		<div class="star" id="start3"></div>
+		<div class="star" id="start4"></div>
+		<div class="star" id="start5"></div>
+
+		<div id="circle">
+			<div class="cloud cloud1"></div>
+			<div class="cloud cloud2"></div>
+			<div class="cloud cloud3"></div>	
+
+			<div class="rabbit">
+				<!--div class="ear"></div>
+				<div class="ear"></div-->
+				<div class="head">
+					<div class="ears"></div>
+					<div class="ears"></div>
+				</div>
+				<div class="top_body">
+					<div class="hand"></div>
+				</div>
+				<div class="bottom_body"></div>
+				<div class="foot"></div>
+			</div>
+
+		</div><!--circle end-->
+		
+
+		<div class="fixed_position" id="shooting_star1_position">
+			<div class="shooting_star"></div>
+		</div>
+
+		<div class="fixed_position" id="shooting_star2_position">
+			<div class="shooting_star"></div>
+		</div>
+
+		<div class="rocket">
+			<div class="rocket_header_wrapper">
+				<div class="rocket_header"></div>
+			</div>
+			<div class="rocket_body"></div>
+			<div class="rocket_fire_launcher"></div>
+		</div>
+		<!--<img id="moon_festival" src="img/中秋.png" alt="中秋節">-->
+		
+	</body>
+</html>

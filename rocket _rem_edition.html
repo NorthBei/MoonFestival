@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by anonymous (http://jsbin.com/boxizikene/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+body{
+  background: #444;
+}
+
+.rocket{
+  position:relative;
+  left:100px;
+  /*border-bottom: 100px solid #de5746;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;*/
+  width: 8.5rem;
+}
+
+
+*::before,
+*::after{
+  content: "";
+    position: absolute;
+}
+
+.rocket::before{
+    top: 15rem;
+    left: -0.7rem;
+    height: 10rem;
+    width: 10rem;
+    background: transparent;
+    border-radius: 100%;
+    box-shadow: 0 -3rem 0 1rem #de5746;
+}
+
+.rocket_header_wrapper{
+    height: 6rem;
+    width: 8.5rem;
+    background: transparent;
+    overflow:hidden;
+}
+
+.rocket_header{
+    height: 9rem;
+    width: 9rem;
+    background: #de5746;
+    border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+    transform: rotate(-45deg);
+    transform-origin: 75% 64%;
+    /*margin-top: 26px;
+    margin-left:-3px;*/
+}
+
+.rocket_body{
+  position:relative;
+  height:12rem;
+  width:8.5rem;
+  background: #dfe2e4;
+  border-radius:6% 6% 30% 30% /36% 36% 85% 85%;
+  /*box-shadow:-8px 0 0 0 rgba(0,0,0,0.2) inset;*/
+}
+
+.rocket_body::after{
+  top: 2rem;
+  height: 3rem;
+  width:3rem;
+  background: #3a99d8;
+  border-radius:100%;
+  box-shadow: 0 0 0px 8px #444;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.rocket_fire_laucher{
+  width:4rem;
+  border-bottom:1rem solid #537595;
+  border-left:0.5rem solid transparent;
+  border-right:0.5rem solid transparent;
+  margin:auto;
+}
+
+.rocket_fire_laucher::after{
+  left:2.8rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  background: #f0c330;
+  transform: rotate(135deg);
+  box-shadow:8px -8px 0 11px #f19b2c;
+  z-index:-1;
+  animation:fire 1s infinite;
+}
+
+@keyframes fire{
+  100%{
+    box-shadow:8px -8px 0 10px #f19b2c;
+  }
+  
+  50%{
+    box-shadow:8px -8px 0 12px #f19b2c;
+  }
+  
+  0%{
+    box-shadow:8px -8px 0 10px #f19b2c;
+  }
+}
+
+</style>
+</head>
+<body>
+  
+ <div class="rocket">
+   <div class="rocket_header_wrapper">
+     <div class="rocket_header"></div>
+   </div>
+   <div class="rocket_body"></div>
+   <div class="rocket_fire_laucher"></div>
+ </div>
+  
+  
+  
+</body>
+</html>

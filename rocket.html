@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by anonymous (http://jsbin.com/betayajabe/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+body{
+  background: #444;
+}
+
+.rocket{
+  position:relative;
+  left:100px;
+  /*border-bottom: 100px solid #de5746;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;*/
+  height: 160px;
+  width: 122px;
+  
+  
+}
+
+.rocket::before{
+    content: "";
+    position: absolute;
+    top: 231px;
+    left: -8px;
+    height: 155px;
+    width: 140px;
+    background: transparent;
+    border-radius: 100%;
+    box-shadow: 0 -40px 0 17px #de5746;
+}
+
+.rocket_header_wrapper{
+    height: 80px;
+    width: 121px;
+    padding-top: 27px;
+    background: transparent;
+    overflow:hidden;
+}
+
+.rocket_header{
+    height: 128px;
+    width: 127px;
+    margin-left: -3px;
+    background: #de5746;
+    border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+    transform: rotateZ(-45deg);
+    margin-top: 26px;
+  
+}
+
+.rocket_body{
+  height:180px;
+  width:121px;
+  background: #dfe2e4;
+  border-radius:6% 6% 30% 30% /36% 36% 85% 85%;
+  position:relative;
+  /*box-shadow:-8px 0 0 0 rgba(0,0,0,0.2) inset;*/
+}
+
+.rocket_body::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top: 35px;
+  height: 50px;
+  width:50px;
+  background: #3a99d8;
+  border-radius:100%;
+  box-shadow: 0 0 0px 8px #444;
+  transform: translateX(-50%);
+}
+
+.rocket_fire_laucher{
+  /*height: 15px;*/
+  width:55px;
+  border-bottom:15px solid #537595;
+  border-left:6px solid transparent;
+  border-right:6px solid transparent;
+  margin:auto;
+  
+}
+
+.rocket_fire_laucher::before{
+  content:"";
+  position:absolute;
+  margin-top:15px;
+  left:40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  background: #f0c330;
+
+  transform: rotate(135deg);
+  
+  box-shadow:8px -8px 0 11px #f19b2c;
+  
+}
+
+
+</style>
+</head>
+<body>
+  
+ <div class="rocket">
+  <div class="rocket_header_wrapper">
+    <div class="rocket_header"></div>
+  </div>
+   <div class="rocket_body"></div>
+   <div class="rocket_fire_laucher"></div>
+ </div>
+  
+  
+  
+</body>
+</html>

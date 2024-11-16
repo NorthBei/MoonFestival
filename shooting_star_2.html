@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Shooting star</title>
+<style>
+body{
+  background: #444;
+}
+
+.flash_star{
+  transform:rotate(-45deg);
+  height: 6px;
+  width:20px;
+  background: white;
+  border-radius: 100%;
+  animation-name: star;
+  animation-iteration-count:infinite;
+  animation-duration: 10s;
+  animation-fill-mode:backwards;
+}
+
+.flash_star::after{
+    content: "";
+    position: absolute;
+    left: 15px;
+    height: 0px;
+    border-left: 150px solid white;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+
+@keyframes star {
+  100% {
+    opacity: 0;
+  }
+  
+  10%{
+    margin-top:550px;
+    margin-left:-50px;
+  }
+  
+  9% {
+    margin-top:500px;
+    margin-left:0px;
+    opacity: 0;
+  }
+  8%{
+    opacity: 0.01;
+  }
+
+  0% {
+    opacity: 1;
+    margin-top:0;
+    margin-left:500px;
+    
+  }
+}
+</style>
+</head>
+<body>
+  <div class="flash_star"></div>
+</body>
+</html>
